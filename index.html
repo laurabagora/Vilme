@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <title>VILME</title>
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo-section">
+        <img src="images/logo.png" alt="Vilme Logo" class="logo"> 
+        <h1>VILME</h1>
+    </a>
+    <nav>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="comics.html">Comics</a></li>
+            <li><a href="novels.html">Novels</a></li>
+            <li><a href="film.html">Audio/Film</a></li>
+            <li><a href="upcoming.html">Upcoming</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="photo-banner"></section>
+
+<section class="featured-books">
+  <a href="books/novel1.html" class="book-tile">
+    <img src="images/novels/book1.png" alt="Book One cover">
+    <span class="book-title">Never Fear the Sigurd</span>
+  </a>
+
+  <a href="https://www.youtube.com/watch?v=ad5lu7HoI8E" class="book-tile">
+    <img src="images/audio/audio1.png" alt="Book Two cover">
+    <span class="book-title">Ugly God</span>
+  </a>
+
+  <a href="books/book3.html" class="book-tile">
+    <img src="images/home/coming_soon.jpeg" alt="Book Three cover">
+    <span class="book-title">Book Three</span>
+  </a>
+
+   <a href="books/book4.html" class="book-tile">
+    <img src="images/home/coming_soon.jpeg" alt="Book Four cover">
+    <span class="book-title">Book Four</span>
+  </a>
+</section>
+
+<section class="info-section">
+  <div class="container">
+    <div class="info-card">
+      <h3>Features</h3>
+      <img src="images/home/me.png" alt="About us photo" class="info-card-img">
+      <p>Feature stories go here</p>
+    </div>
+
+    <div class="info-card">
+      <h3>Shop</h3>
+      <a href="shop.html" target="_blank">
+          <img src="images/home/shirt.png" alt="About us photo" class="info-card-img">
+        </a>
+      <p>Prints, merch, and audiobooks coming soon!</p>
+    </div>
+  </div>
+</section>
+
+<section class="upcoming-banner"></section>
+
+<section class="contact-section">
+  <h2>Reach Us Here:</h2>
+
+  <div class="contact-buttons">
+    <a href="mailto:your@email.com" class="contact-btn">Email</a>
+    <a href="https://www.instagram.com/rt_quill/" target="_blank" class="contact-btn">Instagram</a>
+  </div>
+</section>
+
+<footer>
+    <p>2025 Laura Guerrero | All Rights Reserved</p>
+</footer>
+</body>
+<script type="text/javascript">
+const menuToggle = document.getElementById('mobile-menu');
+const navLinks = document.querySelector('.nav-links');
+
+menuToggle.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
+</script>
+</html>
+
+
